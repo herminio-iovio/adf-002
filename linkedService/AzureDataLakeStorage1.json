@@ -4,7 +4,19 @@
 		"annotations": [],
 		"type": "AzureBlobFS",
 		"typeProperties": {
-			"url": "https://gen2demo.dfs.core.windows.net"
+			"url": "https://gen2demo.dfs.core.windows.net",
+			"tenant": "801d58dd-f929-4b28-bbdb-9196a8fee769",
+			"servicePrincipalId": "9a694549-60be-48fc-821b-2e1a2913f7dc",
+			"servicePrincipalCredentialType": "ServicePrincipalKey",
+			"servicePrincipalCredential": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "iovio-sp-0001",
+				"secretVersion": "ff099f92ca284307b567c551d8dac447"
+			}
 		}
 	}
 }
