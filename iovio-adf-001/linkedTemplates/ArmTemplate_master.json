@@ -11,6 +11,18 @@
 			"type": "string",
 			"defaultValue": "https://gen2demo.dfs.core.windows.net"
 		},
+		"AzureDataLakeStorage1_properties_typeProperties_tenant": {
+			"type": "string",
+			"defaultValue": "801d58dd-f929-4b28-bbdb-9196a8fee769"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_servicePrincipalId": {
+			"type": "string",
+			"defaultValue": "9a694549-60be-48fc-821b-2e1a2913f7dc"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://iovio-kv-adf-001.vault.azure.net/"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -38,8 +50,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureKeyVault1_properties_typeProperties_baseUrl": {
+						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_tenant": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_tenant')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_servicePrincipalId": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_servicePrincipalId')]"
 					}
 				}
 			},

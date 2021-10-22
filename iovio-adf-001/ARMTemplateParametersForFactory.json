@@ -7,6 +7,15 @@
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://gen2demo.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_tenant": {
+			"value": "801d58dd-f929-4b28-bbdb-9196a8fee769"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_servicePrincipalId": {
+			"value": "9a694549-60be-48fc-821b-2e1a2913f7dc"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://iovio-kv-adf-001.vault.azure.net/"
 		}
 	}
 }
