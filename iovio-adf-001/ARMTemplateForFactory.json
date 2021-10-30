@@ -23,9 +23,9 @@
 			"type": "string",
 			"defaultValue": "https://iovio-kv-adf-001.vault.azure.net/"
 		},
-		       "location": {
+	   "location": {
             "type": "string",
-            "defaultValue": "rg-001",
+            "defaultValue": "northeurope",
             "metadata": {
                 "description": "Location for your data factory"
             }
