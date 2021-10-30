@@ -25,7 +25,7 @@
 		},
 		       "location": {
             "type": "string",
-            "defaultValue": "[resourceGroup().location]",
+            "defaultValue": "rg-001",
             "metadata": {
                 "description": "Location for your data factory"
             }
